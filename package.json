@@ -2,7 +2,7 @@
   "name": "letter-gambit",
   "version": "1.0.0",
   "description": "A strategic word guessing game with reversed letter costs",
-  "homepage": "https://YOUR_USERNAME.github.io/letter-gambit",
+  "homepage": "https://edabot.github.io/letter-gambit",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
