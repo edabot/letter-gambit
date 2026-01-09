@@ -137,10 +137,16 @@ function App() {
 
   const renderPhrase = () => {
     const words = targetPhrase.split(' ');
+
+    // Calculate if we need extra small tiles for very long phrases on mobile
+    const longestWord = Math.max(...words.map(w => w.length));
+    const totalChars = targetPhrase.replace(/\s/g, '').length;
+    const isExtraLong = longestWord > 8 || totalChars > 20;
+
     return words.map((word, wordIdx) => (
-      <span key={wordIdx} className="word-group">
+      <span key={wordIdx} className={`word-group ${isExtraLong ? 'compact' : ''}`}>
         {word.split('').map((char, charIdx) => (
-          <span key={charIdx} className="letter-tile">
+          <span key={charIdx} className={`letter-tile ${isExtraLong ? 'compact' : ''}`}>
             {revealedLetters.has(char) || won ? char : ''}
           </span>
         ))}

@@ -418,3 +418,242 @@ body {
   justify-content: center;
   gap: 1rem;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .game-container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+  }
+
+  .header {
+    margin-bottom: 1.5rem;
+  }
+
+  .phrase-display {
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+    min-height: 100px;
+  }
+
+  .letter-tile {
+    width: 35px;
+    height: 42px;
+    font-size: 1.4rem;
+  }
+
+  .word-group {
+    gap: 0.3rem;
+  }
+
+  .theme-display {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    letter-spacing: 2px;
+  }
+
+  .info-bar {
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .budget-value {
+    font-size: 1.2rem;
+  }
+
+  .info-label {
+    font-size: 0.7rem;
+  }
+
+  .history-letter {
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+  }
+
+  .letter-groups {
+    gap: 1rem;
+  }
+
+  .letter-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+  }
+
+  .group-label {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
+
+  .guess-section {
+    padding: 1rem;
+  }
+
+  .guess-input {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .hint-display {
+    font-size: 0.85rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .game-over-title {
+    font-size: 2rem;
+  }
+
+  .final-score {
+    font-size: 1.2rem;
+  }
+
+  .rating {
+    font-size: 1.5rem;
+  }
+
+  .victory-screen,
+  .defeat-screen {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-container {
+    padding: 0.75rem;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .phrase-display {
+    padding: 1rem 0.5rem;
+    gap: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .letter-tile {
+    width: 24px;
+    height: 32px;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+
+  .word-group {
+    gap: 0.2rem;
+  }
+
+  .letter-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 0.95rem;
+  }
+
+  .info-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .guess-controls {
+    flex-direction: column;
+  }
+
+  .guess-input {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Extra small screens - iPhone SE, etc */
+@media (max-width: 375px) {
+  .game-container {
+    padding: 0.5rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .phrase-display {
+    padding: 0.75rem 0.25rem;
+    gap: 0.4rem;
+  }
+
+  .letter-tile {
+    width: 20px;
+    height: 28px;
+    font-size: 0.9rem;
+    border-radius: 3px;
+  }
+
+  .word-group {
+    gap: 0.15rem;
+  }
+
+  .theme-display {
+    font-size: 0.7rem;
+    padding: 0.4rem;
+  }
+
+  .letter-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+  }
+
+  .group-label {
+    font-size: 0.65rem;
+  }
+}
+
+/* Compact mode for extra long phrases on mobile */
+@media (max-width: 480px) {
+  .letter-tile.compact {
+    width: 20px;
+    height: 28px;
+    font-size: 0.85rem;
+  }
+
+  .word-group.compact {
+    gap: 0.15rem;
+  }
+
+  .phrase-display:has(.compact) {
+    gap: 0.35rem;
+    padding: 0.75rem 0.25rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .letter-tile.compact {
+    width: 18px;
+    height: 26px;
+    font-size: 0.8rem;
+  }
+
+  .word-group.compact {
+    gap: 0.1rem;
+  }
+
+  .phrase-display:has(.compact) {
+    gap: 0.3rem;
+    padding: 0.5rem 0.2rem;
+  }
+}
