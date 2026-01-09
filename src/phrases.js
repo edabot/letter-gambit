@@ -111,7 +111,7 @@ export const PHRASES = [
   { phrase: "HERES LOOKING AT YOU KID", theme: "Famous Movie Quotes", hint: "Casablanca" },
   { phrase: "YOU SHALL NOT PASS", theme: "Famous Movie Quotes", hint: "Middle Earth warning" },
   { phrase: "NOBODY PUTS BABY IN A CORNER", theme: "Famous Movie Quotes", hint: "Dirty statement" },
-  { phrase: "THEY CALL IT A ROYALE WITH CHEESE", theme: "Famous Movie Quotes", hint: "The little differences" }
+  { phrase: "THEY CALL IT A ROYALE WITH CHEESE", theme: "Famous Movie Quotes", hint: "The little differences" },
 
   // Famous Song Lyrics
   { phrase: "SWEET HOME ALABAMA", theme: "Famous Song Lyrics", hint: "Southern rock anthem" },
